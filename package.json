@@ -9,6 +9,7 @@
     "build:storybook": "build-storybook"
   },
   "dependencies": {
+    "@stitches/react": "^1.2.7",
     "antd": "^4.19.5",
     "axios": "^0.26.1",
     "next": "^12.1.5",
