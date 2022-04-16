@@ -1,23 +1,42 @@
-import React, { useState } from 'react';
-import { Button, Input, Modal } from 'antd';
+import React from 'react';
+import { Button, Form, Input, Space, Typography } from 'antd';
+import { styled } from '@stitches/react';
+import { useRouter } from 'next/router';
 
-export default function SignIn() {
-  const [openModal, setOpenModal] = useState(false);
+export default function SignUpPage() {
+  const [form] = Form.useForm();
+  const router = useRouter();
+
   return (
-    <>
-      <Input
-        width={300}
-        placeholder="로그인하세요"
-        onClick={() => console.log(213)}
-      />
-
-      <Button onClick={() => setOpenModal(true)}>눌러주세요</Button>
-      <Modal
-        closable
-        visible={openModal}
-        onCancel={() => setOpenModal(false)}
-        onOk={() => setOpenModal(false)}
-      />
-    </>
+    <SignUpSection>
+      <Form form={form}>
+        <Space direction="vertical" size={10} style={{ display: 'flex' }}>
+          <InputWrapper>
+            <Typography.Text strong>아이디</Typography.Text>
+            <Input placeholder="아이디 입력" />
+          </InputWrapper>
+          <InputWrapper>
+            <Typography.Text strong>비밀번호</Typography.Text>
+            <Input placeholder="비밀번호 입력" />
+          </InputWrapper>
+          <InputWrapper>
+            <Typography.Text strong>비밀번호 확인</Typography.Text>
+            <Input placeholder="비밀번호 확인" />
+          </InputWrapper>
+          <Button type="primary" block onClick={() => router.push('/')}>
+            회원가입
+          </Button>
+        </Space>
+      </Form>
+    </SignUpSection>
   );
 }
+
+const InputWrapper = styled('div', {});
+
+const SignUpSection = styled('div', {
+  width: '400px',
+  padding: 20,
+  margin: '300px auto',
+  backgroundColor: 'LightGray',
+});
