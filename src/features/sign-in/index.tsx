@@ -13,16 +13,13 @@ export default function SignInPage() {
         <Space direction="vertical" size={10} style={{ display: 'flex' }}>
           <InputWrapper>
             <Typography.Text strong>아이디</Typography.Text>
-            <Input placeholder="아이디 입력" onClick={() => router.push('/')} />
+            <Input placeholder="아이디 입력" />
           </InputWrapper>
           <InputWrapper>
             <Typography.Text strong>비밀번호</Typography.Text>
-            <Input
-              placeholder="비밀번호 입력"
-              onClick={() => console.log(213)}
-            />
+            <Input placeholder="비밀번호 입력" />
           </InputWrapper>
-          <Button type="primary" block>
+          <Button type="primary" block onClick={() => router.push('/')}>
             로그인하기
           </Button>
         </Space>

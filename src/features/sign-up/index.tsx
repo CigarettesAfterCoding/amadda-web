@@ -13,20 +13,17 @@ export default function SignUpPage() {
         <Space direction="vertical" size={10} style={{ display: 'flex' }}>
           <InputWrapper>
             <Typography.Text strong>아이디</Typography.Text>
-            <Input placeholder="아이디 입력" onClick={() => router.push('/')} />
+            <Input placeholder="아이디 입력" />
           </InputWrapper>
           <InputWrapper>
             <Typography.Text strong>비밀번호</Typography.Text>
-            <Input
-              placeholder="비밀번호 입력"
-              onClick={() => console.log(213)}
-            />
+            <Input placeholder="비밀번호 입력" />
           </InputWrapper>
           <InputWrapper>
             <Typography.Text strong>비밀번호 확인</Typography.Text>
             <Input
               placeholder="비밀번호 확인"
-              onClick={() => console.log(213)}
+              onClick={() => router.push('/')}
             />
           </InputWrapper>
           <Button type="primary" block>
