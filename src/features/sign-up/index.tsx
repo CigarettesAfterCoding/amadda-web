@@ -21,12 +21,9 @@ export default function SignUpPage() {
           </InputWrapper>
           <InputWrapper>
             <Typography.Text strong>비밀번호 확인</Typography.Text>
-            <Input
-              placeholder="비밀번호 확인"
-              onClick={() => router.push('/')}
-            />
+            <Input placeholder="비밀번호 확인" />
           </InputWrapper>
-          <Button type="primary" block>
+          <Button type="primary" block onClick={() => router.push('/')}>
             회원가입
           </Button>
         </Space>
