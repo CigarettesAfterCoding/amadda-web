@@ -1,15 +1,14 @@
 import React from 'react';
 import { Modal } from 'antd';
 
-interface DiaryCardProps {
-  onClick: () => void;
+interface DiaryModalProps {
+  onClose?: () => void;
+  onOK?: () => void;
   isVisiable: boolean;
 }
 
-const DiaryModal = ({ onClick, isVisiable }: DiaryCardProps) => {
-  return (
-    <Modal visible={isVisiable} closable onCancel={onClick} onOk={onClick} />
-  );
+const DiaryModal = ({ onClose, onOK, isVisiable }: DiaryModalProps) => {
+  return <Modal visible={isVisiable} closable onCancel={onClose} onOk={onOK} />;
 };
 
 export default DiaryModal;

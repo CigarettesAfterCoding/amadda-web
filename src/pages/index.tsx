@@ -18,7 +18,8 @@ function HomePage() {
         {openModal && (
           <DiaryModal
             isVisiable={openModal}
-            onClick={() => setOpenModal(false)}
+            onOK={() => setOpenModal(false)}
+            onClose={() => setOpenModal(false)}
           />
         )}
       </FlexWrapper>
