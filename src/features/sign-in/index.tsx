@@ -20,6 +20,6 @@ export default function SignIn() {
         onCancel={() => setOpenModal(false)}
         onOk={() => setOpenModal(false)}
       />
-    </ㅍ>
+    </>
   );
 }
