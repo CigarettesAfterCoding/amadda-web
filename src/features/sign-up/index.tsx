@@ -1,9 +1,11 @@
 import React from 'react';
 import { Button, Form, Input, Space, Typography } from 'antd';
 import { styled } from '@stitches/react';
+import { useRouter } from 'next/router';
 
 export default function SignUpPage() {
   const [form] = Form.useForm();
+  const router = useRouter();
 
   return (
     <SignUpSection>
@@ -11,7 +13,7 @@ export default function SignUpPage() {
         <Space direction="vertical" size={10} style={{ display: 'flex' }}>
           <InputWrapper>
             <Typography.Text strong>아이디</Typography.Text>
-            <Input placeholder="아이디 입력" onClick={() => console.log(213)} />
+            <Input placeholder="아이디 입력" onClick={() => router.push('/')} />
           </InputWrapper>
           <InputWrapper>
             <Typography.Text strong>비밀번호</Typography.Text>
