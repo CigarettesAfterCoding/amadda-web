@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@semantic-release/git", "virtual:f7de0040b55497d49ff20d081f24e8ad62be300d320e7705bca69f9567be528836b722233aef7def62ea4f4d41aab2ef320115bdffafeb352d03471c63209fa7#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:8e700fd456d50f6da37430593bc9d2afe809721c9f048ed4b4c5f47fb84331a2a853c382bf79882f82361ba0770e782b4e1fbd195a65bff8ad3dbec6b0ec0e22#npm:8.0.4"],\
+            ["@stitches/react", "virtual:f7de0040b55497d49ff20d081f24e8ad62be300d320e7705bca69f9567be528836b722233aef7def62ea4f4d41aab2ef320115bdffafeb352d03471c63209fa7#npm:1.2.7"],\
             ["@types/node", "npm:17.0.24"],\
             ["@types/react", "npm:18.0.5"],\
             ["@types/react-dom", "npm:18.0.1"],\
@@ -963,6 +964,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@stitches/react", [\
+        ["npm:1.2.7", {\
+          "packageLocation": "./.yarn/cache/@stitches-react-npm-1.2.7-f56948d6aa-f4a66d2086.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "npm:1.2.7"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:f7de0040b55497d49ff20d081f24e8ad62be300d320e7705bca69f9567be528836b722233aef7def62ea4f4d41aab2ef320115bdffafeb352d03471c63209fa7#npm:1.2.7", {\
+          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-26d83a8aa2/0/cache/@stitches-react-npm-1.2.7-f56948d6aa-f4a66d2086.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "virtual:f7de0040b55497d49ff20d081f24e8ad62be300d320e7705bca69f9567be528836b722233aef7def62ea4f4d41aab2ef320115bdffafeb352d03471c63209fa7#npm:1.2.7"],\
+            ["@types/react", "npm:18.0.5"],\
+            ["react", "npm:18.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@tootallnate/once", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/@tootallnate-once-npm-2.0.0-e36cf4f140-ad87447820.zip/node_modules/@tootallnate/once/",\
@@ -1376,6 +1399,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["amadda-web", "workspace:."],\
             ["@semantic-release/git", "virtual:f7de0040b55497d49ff20d081f24e8ad62be300d320e7705bca69f9567be528836b722233aef7def62ea4f4d41aab2ef320115bdffafeb352d03471c63209fa7#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:8e700fd456d50f6da37430593bc9d2afe809721c9f048ed4b4c5f47fb84331a2a853c382bf79882f82361ba0770e782b4e1fbd195a65bff8ad3dbec6b0ec0e22#npm:8.0.4"],\
+            ["@stitches/react", "virtual:f7de0040b55497d49ff20d081f24e8ad62be300d320e7705bca69f9567be528836b722233aef7def62ea4f4d41aab2ef320115bdffafeb352d03471c63209fa7#npm:1.2.7"],\
             ["@types/node", "npm:17.0.24"],\
             ["@types/react", "npm:18.0.5"],\
             ["@types/react-dom", "npm:18.0.1"],\
