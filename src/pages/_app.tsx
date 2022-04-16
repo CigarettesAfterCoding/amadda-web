@@ -1,9 +1,10 @@
-import { AppProps } from "next/app";
-import { ReactNode } from "react";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
+import React, { ReactNode } from 'react';
+import { AppProps } from 'next/app';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
+import '../styles/antd.scss';
 
-declare module "react-query/types/react/QueryClientProvider" {
+declare module 'react-query/types/react/QueryClientProvider' {
   interface QueryClientProviderProps {
     children?: ReactNode;
   }
