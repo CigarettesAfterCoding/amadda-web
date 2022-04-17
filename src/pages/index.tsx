@@ -3,11 +3,13 @@ import Link from 'next/link';
 import DiaryCard from '@components/DiaryCard';
 import { styled } from '@stitches/react';
 import DiaryModal from '@components/DiaryModal';
+import Header from '@components/Header';
 
 function HomePage() {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <div className="App">
+    <>
+      <Header />
       Welcome to Amadda
       <Link href="/sign-up">회원가입</Link>
       <Link href="/sign-in">로그인</Link>
@@ -23,7 +25,7 @@ function HomePage() {
           />
         )}
       </FlexWrapper>
-    </div>
+    </>
   );
 }
 
